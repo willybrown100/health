@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+img{
+  /* width: 100%; */
+}
+body{
+ background: rgb(233, 229, 229);
+}
+a{
+  text-decoration: none;
+}
+h1,h2,h3,h4{
+  text-transform: capitalize;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.2rem;
+}
+h4{
+  font-size: 1rem;
+}
+p{
+  margin-bottom: 1.2rem;
+  /* max-width: 35rem; */
+}
+@media screen and (min-width:900px){
+  h1{
+    font-size:4rem ;
+  }
+  h2{
+    font-size:3rem ;
+  }
+  h3{
+    font-size:2rem ;
+  }
+  h4{
+    font-size:1rem ;
+  }
+  body{
+    font-size: 1rem;
+  }
+  h1,h2,h3,h4{
+    line-height: 1;
+  }
+}
