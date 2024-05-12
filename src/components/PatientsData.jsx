@@ -6,7 +6,7 @@ import { usePatient } from "../PatientContext";
 
 
 function PatientsData() {
- const {data=[]} = useQuery({
+ const {data=[],isLoading} = useQuery({
    queryFn: getPatients,
    queryKey:["patients"]
  });
@@ -25,7 +25,7 @@ function PatientsData() {
          className="h-[1rem]"
        />
      </div>
-
+{isLoading&&<p className="text-center font-semibold">loading....</p>}
      <ul className="space-y-2">
        {data.map((item,index) => (
          <li key={item.name} onClick={()=> handleClick(item)} className="cursor-pointer hover:bg-slate-200">
